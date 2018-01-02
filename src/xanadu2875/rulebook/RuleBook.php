@@ -104,6 +104,7 @@ class RuleBook extends PluginBase implements event\Listener
 
   public function onJoin(event\player\PlayerJoinEvent $event)
   {
+    $player = $event->getPlayer();
     $name = strtolower($player->getName());
     if(!($this->db->query("SELECT * FROM joindata WHERE user_name='" . $this->db->escapeString($name) . "'")->fetchArray()))
     {
