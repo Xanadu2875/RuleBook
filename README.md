@@ -41,6 +41,8 @@ page:
 
 内容を更新して再配布したい場合はplugins/ReleBookのplayer.dbを削除してください
 
+文章を改行するときは/nを使ってください
+
 ## Library
 - [SendUIAPI](https://github.com/gigantessbeta)
 
