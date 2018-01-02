@@ -47,6 +47,7 @@ page:
 ## Author
 
 <details><summary>Xanadu2875</summary>
+
 Twitter
 [@xanadu2875](https://twitter.com/xanadu2875)
 
@@ -62,7 +63,7 @@ GPLLv3
 
 - 画像追加できるようにする。 (typeをimage、dataをURLかフルパスにすると表示されるようにしたかったけど画像が反映されない)
 
-##　Anything Else
+## Anything Else
 
 - コミットくだしあ
 - あけおめ
