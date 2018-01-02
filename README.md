@@ -41,6 +41,9 @@ page:
 
 内容を更新して再配布したい場合はplugins/ReleBookのplayer.dbを削除してください
 
+## Library
+- [SendUIAPI](https://github.com/gigantessbeta)
+
 ## Author
 
 Twitter
@@ -52,3 +55,12 @@ Lobi
 ## License
 
 GPLLv3
+
+## TODO
+
+- 画像追加できるようにする。 (typeをimage、dataをURLかフルパスにすると表示されるようにしたかったけど画像が反映されない)
+
+##Anything Else
+
+- コミットくだしあ
+- あけおめ
