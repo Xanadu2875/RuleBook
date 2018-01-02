@@ -4,8 +4,7 @@ PMMPプラグインです(Written in PHP)
 
 ## Description
 
-あらかじめ設定されている場所にFormを使ってテレポートできます。
-
+初めて訪れたプレイヤーに任意で内容を設定できるルールブックを渡します(WrittenBook)
 
 ## Download
 
