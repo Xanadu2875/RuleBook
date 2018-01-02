@@ -1,6 +1,6 @@
 name: RuleBook
 main: xanadu2875\rulebook\RuleBook
-version: 0.1.0
+version: 0.1.1
 api:
 - 2.0.0
 - 3.0.0

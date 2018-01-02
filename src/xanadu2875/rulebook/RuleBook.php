@@ -6,6 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event;
 use pocketmine\item;
 use pocketmine\utils\Config;
+use pocketmine\utils\Utils;
 use pocketmine\network\mcpe\protocol\PhotoTransferPacket;
 use pocketmine\nbt\tag\LongTag;
 
@@ -63,19 +64,7 @@ class RuleBook extends PluginBase implements event\Listener
 
   private function checkUpdata(): bool
   {
-    $context = stream_context_create(
-    [
-      "http"=>
-      [
-        "ignore_errors"=>true
-      ]
-    ]);
-    if(!($res = file_get_contents('https://raw.githubusercontent.com/Xanadu2875/VersionManager/master/RuleBook', false, $context)))
-    {
-      $this->getServer()->getLogger()->warning("Error: " . $http_response_header[0]);
-      return false;
-    }
-    $res = str_replace('\n', "", $res);
+    $res = str_replace('\n', "", Utils::getURL("https://raw.githubusercontent.com/Xanadu2875/VersionManager/master/RuleBook"));
     return $res === $this->getDescription()->getVersion() ? false : true;
   }
 
@@ -115,10 +104,6 @@ class RuleBook extends PluginBase implements event\Listener
 
   public function onJoin(event\player\PlayerJoinEvent $event)
   {
-    $player = $event->getPlayer();
-    if($this->photo) foreach($this->photo as $photo) $player->dataPacket($photo);
-    $player->getInventory()->addItem($this->book);
-
     $name = strtolower($player->getName());
     if(!($this->db->query("SELECT * FROM joindata WHERE user_name='" . $this->db->escapeString($name) . "'")->fetchArray()))
     {
