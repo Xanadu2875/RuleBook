@@ -16,6 +16,29 @@ PMMPプラグインです(Written in PHP)
 
 ![demo2](https://user-images.githubusercontent.com/34952872/34479616-2b5cfe8c-efeb-11e7-8b76-e58966ace60a.jpg)
 
+## Usage
+
+```yaml
+# 本のタイトル
+title: ルールブック
+# 著者
+author: オーナー
+# 内容
+# 一ページずつ書けます
+#
+# - type: text
+#   data: 内容←ここだけ変えてください
+#   
+# ↑これで一ページです。増やしたければ同じ記述をもう一つ増やしてください
+#
+# 例:
+page:
+- type: text
+  data: ルール
+- type: text
+  data: あけおめ
+```
+
 ## Author
 
 Twitter

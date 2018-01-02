@@ -1,0 +1,9 @@
+---
+title: ルールブック
+author: オーナー
+page:
+- type: text
+  data: ルール
+- type: text
+  data: あけおめ
+...
