@@ -8,7 +8,7 @@ PMMPプラグインです(Written in PHP)
 
 ## Download
 
-### [![PMMP Forum JP](https://forum.pmmp.ga/assets/logo-8gp5x8ya.png)](https://forum.pmmp.ga/d/45-rulebook)
+### [![MCBE Forum](https://forum.mcbe.jp/styles/uix_dark/images/logo.png)](https://forum.mcbe.jp/threads/39/)
 
 ## Demo
 
