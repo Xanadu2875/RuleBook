@@ -1,6 +1,6 @@
 name: RuleBook
 main: xanadu2875\rulebook\RuleBook
-version: 0.1.2
+version: 0.1.3
 api:
 - 2.0.0
 - 3.0.0
@@ -16,4 +16,4 @@ api:
 - 3.0.0-ALPHA10
 author: Xanadu2875
 description: 初めて訪れたプレイヤーにルールブックを配布します
-website: https://forum.pmmp.ga/d/45-rulebook
+website: https://forum.mcbe.jp/resources/19/
