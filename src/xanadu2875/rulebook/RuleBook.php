@@ -25,7 +25,7 @@ class RuleBook extends PluginBase implements event\Listener
 
     if(!$this->checkUpdata())
     {
-      @$this->getLogger()->notice("新しいバージョンがリリースされています Check!! ⇒ https://forum.pmmp.ga/d/42-preteleporter");
+      $this->getLogger()->notice("新しいバージョンがリリースされています Check!! ⇒ https://forum.pmmp.ga/d/42-preteleporter");
     }
 
     try{
@@ -62,11 +62,7 @@ class RuleBook extends PluginBase implements event\Listener
 
   public function onEnable() { $this->getServer()->getPluginManager()->registerEvents($this, $this); }
 
-  private function checkUpdata(): bool
-  {
-    $res = str_replace('\n', "", Utils::getURL("https://raw.githubusercontent.com/Xanadu2875/VersionManager/master/RuleBook"));
-    return $res === $this->getDescription()->getVersion() ? false : true;
-  }
+  private function checkUpdata() : bool { return str_replace("\n", "",Utils::getURL("https://raw.githubusercontent.com/Xanadu2875/VersionManager/master/RuleBook.txt" . '?' . time() . mt_rand())) === $this->getDescription()->getVersion(); }
 
   private function makeBook($data): void
   {
